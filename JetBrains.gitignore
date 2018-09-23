@@ -47,7 +47,7 @@ cmake-build-*/
 out/
 
 # FB Added 20180923
-.idea/.name
+.idea/.name 
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
