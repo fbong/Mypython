@@ -14,14 +14,23 @@ import random
 highest = 10
 answer = random.randint(1, highest)
 
-print("Please guess a number between 1 and {}: ".format(highest))
+print("Please guess a number between 1 and {}: 0 to Exit".format(highest))
 guess = int(input())
 if guess != answer:
+    if guess == 0 :
+        print("You have chose to exit")
+        exit()
+
     if guess < answer:
-        print("Please guess higher")
+        print("Please guess higher or O to exit")
     else:  # guess must be greater than number
-        print("Please guess lower")
+        print("Please guess lower or 0 to exit")
     guess = int(input())
+
+    if guess == 0 :
+        print("You have chose to exit")
+        exit()
+
     if guess == answer:
         print("Well done, you guessed it")
     else:
